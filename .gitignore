@@ -1,0 +1,31 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+build/
+dist/
+wheels/
+*.egg-info/
+
+# Virtual environments
+.venv/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Test and lint caches
+.pytest_cache/
+.ruff_cache/
+.coverage
+                    
+# Local documents and generated vector databases
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+data/chroma/
+
+# IDE and OS files
+.vscode/
+.DS_Store
+Thumbs.db
