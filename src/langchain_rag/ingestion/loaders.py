@@ -8,7 +8,6 @@ from langchain_community.document_loaders import (
 )
 from langchain_core.documents import Document
 
-
 SUPPORTED_EXTENSIONS = {".pdf", ".txt", ".md", ".docx"}
 
 
@@ -31,7 +30,7 @@ def load_document(file_path: Path) -> list[Document]:
     else:
         loader = TextLoader(
             str(file_path),
-            encoding="utf-8",
+            encoding="utf-8-sig",
         )
 
     documents = loader.load()
