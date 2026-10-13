@@ -1,4 +1,4 @@
-﻿def test_python_runtime() -> None:
+def test_python_runtime() -> None:
     import sys
 
     assert sys.version_info.major == 3

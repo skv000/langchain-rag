@@ -7,7 +7,10 @@ authors = [
     { name = "Samir Vaniya", email = "skvaniya6275@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "langchain-google-genai>=4.4.1",
+    "python-dotenv>=1.2.4",
+]
 
 [project.scripts]
 langchain-rag = "langchain_rag:main"
