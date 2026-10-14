@@ -1,4 +1,3 @@
-
 from pathlib import Path
 
 from langchain_rag.ingestion.loaders import load_directory

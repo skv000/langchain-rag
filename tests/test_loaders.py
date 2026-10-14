@@ -1,4 +1,3 @@
-
 from pathlib import Path
 
 import pytest
@@ -39,6 +38,7 @@ def test_load_directory(tmp_path: Path) -> None:
 
     assert len(documents) == 2
     assert all(isinstance(doc, Document) for doc in documents)
+
 
 def test_load_text_file_strips_utf8_bom(tmp_path: Path) -> None:
     path = tmp_path / "bom.txt"
